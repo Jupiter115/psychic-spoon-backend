@@ -1,5 +1,5 @@
+const mongoose = require('../db/connection')
 
-const mongoose = require('../connection')
 const Schema = mongoose.Schema
 
 
@@ -16,6 +16,6 @@ const ProductSchema = new Schema(
     }
 )
 
-const Product = mongoose.model("Product", ProductSchema)
+const Product = mongoose.model("product", ProductSchema)
 
 module.exports = Product
