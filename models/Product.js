@@ -22,7 +22,7 @@ const ProductSchema = new Schema(
             required: true
         },
         image: {
-            String,
+            type: String,
             required: true
         },
         likes: Number,
