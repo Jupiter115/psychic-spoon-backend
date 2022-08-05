@@ -4,14 +4,14 @@ const app = express();
 require('./db/connection')
 const cors = require('cors');
 app.set('port', process.env.PORT || 3000)
-// const cors = require('cors')
+
 
 
 
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use(cors());
+app.use(cors());
 
 // Redirect
 app.get('/', (req, res) => {
