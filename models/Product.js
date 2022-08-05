@@ -5,11 +5,26 @@ const Schema = mongoose.Schema
 
 const ProductSchema = new Schema(
     {
-        title: String,
-        orig: Number,
-        price: Number,
-        description: String,
-        image: String,
+        title: {
+            type: String,
+            required: true
+        },
+        orig: {
+            type: Number,
+            required: true
+        },
+        price:{
+            type: Number,
+            required: true
+        },
+        description: {
+            type: String,
+            required: true
+        },
+        image: {
+            String,
+            required: true
+        },
         likes: Number,
         category: Array,
         hero: Boolean
