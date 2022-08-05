@@ -12,7 +12,7 @@ const ProductSchema = new Schema(
         image: String,
         likes: Number,
         category: Array,
-        Hero: Boolean
+        hero: Boolean
     }
 )
 

@@ -2,8 +2,8 @@ const mongoose = require('../db/connection')
 
 // create the User schema
 const UserSchema = new mongoose.Schema({
-    Username: String,
-    Password: String
+    username: String,
+    password: String
 })
 
 //instantiate the model and give an name 
