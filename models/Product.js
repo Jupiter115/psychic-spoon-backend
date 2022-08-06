@@ -25,6 +25,10 @@ const ProductSchema = new Schema(
             type: String,
             required: true
         },
+        link: {
+            type: String,
+            required: true
+        },
         likes: Number,
         category: Array,
         hero: Boolean
