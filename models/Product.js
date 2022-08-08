@@ -27,7 +27,7 @@ const ProductSchema = new Schema(
         },
         link: {
             type: String,
-            required: true
+            
         },
         likes: Number,
         category: Array,
