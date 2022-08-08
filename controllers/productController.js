@@ -43,7 +43,7 @@ router.delete('/:id', async (req, res, next) => {
 
 router.patch('/:id', async (req, res, next) => {
     try {
-        const updatedProduct = await Product.findOneAndUpdate(
+        const updatedProduct = await Product.findByIdAndUpdate(
             req.params.id, 
             req.body, 
             {
